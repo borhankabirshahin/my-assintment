@@ -357,6 +357,62 @@ body {
   width: 100px;
 }
 
+/* Footer section */
+
+.footer {
+  max-width: 1440px;
+  margin: 50px auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 80px;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.footer-column {
+  flex: 1;
+  min-width: 200px;
+}
+
+.footer-logo {
+  width: 150px;
+  margin-bottom: 20px;
+}
+
+.footer-description {
+  color: #555;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.footer-title {
+  font-weight: bold;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-column ul li {
+  margin-bottom: 50px;
+  color: #555;
+  cursor: pointer;
+  margin-top: 30px;
+}
+.footer-icons {
+  margin-top: 30px;
+}
+.footer-icons img {
+  width: 30px;
+  height: 30px;
+  margin-right: 15px;
+  cursor: pointer;
+}
+
 /* Mobile Responsive Design for max-width: 576px */
 @media (max-width: 576px) {
   /*  Navbar */
@@ -478,5 +534,11 @@ body {
 
   .newsletter-form button {
     width: 100%;
+  }
+  /*Footer Section */
+  .footer {
+    flex-direction: column;
+    padding: 0 20px;
+    gap: 30px;
   }
 }
