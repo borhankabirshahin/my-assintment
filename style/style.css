@@ -53,3 +53,69 @@ body {
   color: #000000;
   font-size: 18px;
 }
+/* Banner Styles */
+.banner {
+  padding: 60px 0;
+}
+.banner-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+.banner-text h1 {
+  font-size: 36px;
+  font-weight: bold;
+  color: #272727;
+  margin-bottom: 20px;
+}
+.banner-text p {
+  font-size: 16px;
+  color: #5a5a5a;
+}
+.banner-image img {
+  width: 100%;
+  max-width: 500px;
+}
+
+
+/* Mobile Responsive Design for max-width: 576px */
+@media (max-width: 576px) {
+  /*  Navbar */
+  .navbar {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px 20px;
+  }
+
+  .hide {
+    display: none;
+  }
+
+  .nav-logo {
+    display: flex;
+    align-items: center;
+  }
+
+  .cart {
+    display: flex;
+    align-items: center;
+  }
+   /* Banner */
+  .banner-container {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .banner-image {
+    order: -1;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .banner-content {
+    text-align: left;
+  }
