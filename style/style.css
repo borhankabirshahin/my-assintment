@@ -80,7 +80,144 @@ body {
   width: 100%;
   max-width: 500px;
 }
+/* plant section */
+.plants-section {
+  padding: 60px 20px;
+  margin-left: 90px;
+  margin-right: 230px;
+}
 
+/* Header */
+.plants-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.plants-header h2 {
+  font-size: 50px;
+  color: #222;
+  font-weight: 800;
+  margin-bottom: 16px;
+}
+
+.plants-header p {
+  font-size: 18px;
+  color: #000000;
+}
+
+/* Grid Layout */
+.plants-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+}
+
+/* Individual Card */
+.plant-card {
+  background-color: #fff;
+  text-align: center;
+  height: 490px;
+  width: 270px;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
+}
+
+.plant-card:hover {
+  transform: translateY(-5px);
+}
+
+.plant-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.plant-card h3 {
+  font-size: 20px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.plant-card .price {
+  font-size: 22px;
+  font-weight: 400;
+  color: #111111;
+  margin-bottom: 15px;
+}
+
+.plant-card button {
+  background-color: #e95a08;
+  color: #fff;
+  font-weight: 600;
+  border: none;
+  padding: 10px 18px;
+  cursor: pointer;
+  height: 50px;
+  width: 270px;
+  font-size: 16px;
+}
+
+.plant-card button:hover {
+  background-color: #219150;
+}
+
+/* plant-lover-section */
+
+.plant-lover-section {
+  padding: 60px 20px;
+}
+
+.plant-lover-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+.plant-image-wrapper {
+  position: relative;
+  flex: 1 1 400px;
+  max-width: 500px;
+}
+
+.plant-image-wrapper img.flower-img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.plant-image-wrapper img.trusted-badge {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 80px;
+}
+
+.plant-text {
+  flex: 1 1 400px;
+  max-width: 600px;
+  text-align: left;
+}
+
+.plant-text h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.plant-text ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+.plant-text ul li {
+  margin-bottom: 15px;
+  color: #555;
+  line-height: 1.6;
+}
 
 /* Mobile Responsive Design for max-width: 576px */
 @media (max-width: 576px) {
@@ -104,7 +241,7 @@ body {
     display: flex;
     align-items: center;
   }
-   /* Banner */
+  /* Banner */
   .banner-container {
     flex-direction: column;
     padding: 20px;
@@ -119,3 +256,37 @@ body {
   .banner-content {
     text-align: left;
   }
+  /* Plant Lover Section */
+
+  .plants-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    padding: 12px;
+    justify-content: center;
+    margin-left: 140px;
+    box-sizing: border-box;
+  }
+  .plant-card {
+    width: 100%;
+  }
+  .plant-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  .plant-lover {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .plant-lover img {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .plant-lover-content {
+    text-align: left;
+  }
+}
